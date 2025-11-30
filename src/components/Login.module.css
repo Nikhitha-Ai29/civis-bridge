@@ -1,0 +1,141 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #071022 0%, #051226 100%); /* dark navy */
+  padding: 24px;
+}
+
+.card {
+  width: 100%;
+  max-width: 420px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 8px 30px rgba(2,6,23,0.6);
+  color: #e6eef8;
+  border: 1px solid rgba(255,255,255,0.03);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 16px;
+}
+.title {
+  margin: 0;
+  font-size: 32px;
+  color: #63a6ff; /* blue-ish for brand */
+  font-weight: 700;
+}
+.subtitle {
+  margin-top: 6px;
+  color: #9fb3d6;
+  font-size: 12px;
+}
+
+.body {
+  margin-top: 6px;
+}
+.sectionTitle {
+  margin: 0 0 12px 0;
+  font-size: 20px;
+  color: #fff;
+}
+
+.typeRow {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+.typeCard {
+  flex: 1 1 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 10px;
+  padding: 18px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.01);
+  border: 1px solid rgba(255,255,255,0.03);
+  color: #d9e9ff;
+  cursor: pointer;
+  transition: box-shadow 180ms ease, transform 120ms ease, border-color 160ms ease;
+}
+.typeCard:hover { transform: translateY(-2px); }
+
+.typeIcon {
+  font-size: 20px;
+}
+.typeLabel {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.check {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+}
+.blue { background: linear-gradient(90deg,#3fa5ff,#1f7fff); box-shadow: 0 6px 18px rgba(63,165,255,0.25); }
+.purple { background: linear-gradient(90deg,#9b66ff,#7b4bff); box-shadow: 0 6px 18px rgba(140,88,255,0.22); }
+
+.citizenActive { box-shadow: 0 8px 30px rgba(31,127,255,0.14); border-color: rgba(63,165,255,0.32); }
+.politicianActive { box-shadow: 0 8px 36px rgba(140,88,255,0.14); border-color: rgba(140,88,255,0.28); }
+
+.form { display: flex; flex-direction: column; gap: 12px; }
+.label { display: flex; flex-direction: column; font-size: 12px; color: #cbdcf6; gap: 6px; }
+.input {
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.04);
+  background: rgba(255,255,255,0.02);
+  color: #e6eef8;
+  outline: none;
+  font-size: 14px;
+}
+.input::placeholder { color: rgba(230,238,248,0.35); }
+
+.loginBtn {
+  margin-top: 6px;
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-weight: 700;
+  background: linear-gradient(90deg,#3fa5ff,#1f7fff);
+  box-shadow: 0 8px 30px rgba(31,127,255,0.18);
+}
+
+.footerText {
+  margin-top: 14px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  color: #9fb3d6;
+  font-size: 13px;
+}
+.registerLink {
+  background: transparent;
+  border: none;
+  color: #8ec1ff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+@media (max-width: 480px) {
+  .card { padding: 20px; border-radius: 14px; }
+  .typeRow { flex-direction: column; }
+}
